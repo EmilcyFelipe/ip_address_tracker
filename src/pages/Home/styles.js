@@ -33,6 +33,7 @@ export const Input = styled.input`
   font-size: 20px;
   border: none;
   width: 100%;
+  outline: 0;
 `;
 
 export const Submit = styled.input`
@@ -42,4 +43,5 @@ export const Submit = styled.input`
   width: 50px;
   color: #fff;
   background-color: #000;
+  cursor: pointer;
 `;
