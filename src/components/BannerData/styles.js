@@ -11,6 +11,7 @@ export const Container = styled.div`
   box-shadow: 2px 2px 0.5rem rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: -50px;
+  z-index: 1000;
 `;
 
 export const SectionBanner = styled.div`

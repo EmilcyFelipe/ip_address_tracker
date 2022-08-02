@@ -8,7 +8,7 @@ export default function BannerData({ data }) {
   return (
     <Container>
       <SectionBanner>
-        <Title>IP ADRESS</Title>
+        <Title>IP ADDRESS</Title>
         <Response>{data ? data.ip : ""}</Response>
       </SectionBanner>
       <Spacer />

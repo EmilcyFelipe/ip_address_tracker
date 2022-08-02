@@ -3,11 +3,20 @@ import React, { useEffect, useState } from "react";
 import BannerData from "../../components/BannerData";
 import api from "../../services/api";
 
-import { Container, Bg, InputWrapper, Input, Submit } from "./styles";
+import {
+  Container,
+  Bg,
+  InputWrapper,
+  Input,
+  Submit,
+  MapWrapper,
+} from "./styles";
+import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 
 export default function Home() {
   const [ipAddress, setIpAddress] = useState();
   const [data, setData] = useState(null);
+  const [position, setPosition] = useState([51, -0.09]);
 
   useEffect(() => {
     async function loadIpAddress() {
@@ -45,6 +54,19 @@ export default function Home() {
         </form>
         <BannerData data={data}></BannerData>
       </Bg>
+      <MapWrapper>
+        <MapContainer
+          style={{ width: "100%", height: "100%" }}
+          center={position}
+          zoom={13}
+          scrollWheelZoom={true}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+        </MapContainer>
+      </MapWrapper>
     </Container>
   );
 }

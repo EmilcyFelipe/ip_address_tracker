@@ -4,6 +4,8 @@ import bg from "../../assets/pattern-bg.png";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Bg = styled.div`
@@ -44,4 +46,11 @@ export const Submit = styled.input`
   color: #fff;
   background-color: #000;
   cursor: pointer;
+`;
+
+export const MapWrapper = styled.div`
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  flex-grow: 1;
 `;
