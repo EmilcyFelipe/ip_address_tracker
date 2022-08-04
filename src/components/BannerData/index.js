@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Container, SectionBanner, Title, Response, Spacer } from "./styles";
 
 export default function BannerData({ data }) {
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
   return (
     <Container>
       <SectionBanner>

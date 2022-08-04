@@ -11,31 +11,35 @@ export const Container = styled.div`
 export const Bg = styled.div`
   width: 100%;
   height: 30%;
-  background-image: url(${bg});
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(${bg});
+  background-repeat: no-repeat;
   position: relative;
+  box-sizing: border-box;
 `;
 
 export const InputWrapper = styled.div`
   height: 40px;
-  width: 500px;
+  min-width: 400px;
   border-radius: 10px;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
   overflow: hidden;
-  max-inline-size: auto;
 `;
 
 export const Input = styled.input`
   font-size: 20px;
-  border: none;
   width: 100%;
+  border: none;
   outline: 0;
+  padding: 0 10px;
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
 `;
 
 export const Submit = styled.input`

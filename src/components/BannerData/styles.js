@@ -15,7 +15,6 @@ export const Container = styled.div`
 `;
 
 export const SectionBanner = styled.div`
-  width: 150px;
   display: flex;
   flex-direction: column;
   height: 100%;
