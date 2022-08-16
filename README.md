@@ -29,7 +29,7 @@ Os usuários serão capazes de
 
 ### Captura
 
-![](./screenshot.jpg)
+![](https://user-images.githubusercontent.com/47827136/184938728-cc493b16-341f-4c9e-8bfc-ac0ad0dc1815.png)
 
 
 
