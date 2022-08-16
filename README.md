@@ -5,7 +5,7 @@ Essa é minha solução para o desafio do Frontend Mentor de IP Tracker
 ## Table of contents
 
 - [Visão Geral](#visão-geral)
-  - [O Desafio](#the-challenge)
+  - [O Desafio](#o-desafio)
   - [Captura](#screenshot)
   - [Links](#links)
 - [Meu Processo](#my-process)
@@ -20,7 +20,7 @@ Essa é minha solução para o desafio do Frontend Mentor de IP Tracker
 ## Visão Geral
 Trata-se de uma aplicação com o objetivo de rastrear a localidade do IP e mostrar a localidade no mapa, inicialmente ela retorna o IP do usuário assim que acessa a aplicação e possibilita a busca de IPs pela barra de pesquisa
 
-### The challenge
+### O Desafio
 
 Os usuários serão capazes de
 
